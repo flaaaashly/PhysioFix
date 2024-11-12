@@ -7,6 +7,9 @@ Frontend showcase - website demo video
 
 Function realization:
 Computer Vision Motion detection - MotionDetector.zip
+
 AI plan generator machine learning model- personalisedGuidance.zip
+
 User login & Patient profile input - patient details.zip
+
 user feedback for plan update - feedback form.zip
