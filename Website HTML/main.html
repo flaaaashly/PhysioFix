@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>PhysioFix | Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="Picture/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<a href="main.html" class="active"><img src="Picture/Logo_2.png" alt="logo" width="180px"></a>
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="main.html" class="active">Home</a></li>
+						<li><a href="ai monitor.html">AI Monitor</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+						<li><a href="profile.html">Profile</a></li>
+					</ul>
+				</nav>
+				<a href="profile.html"><img src="Picture/icon 1.png" width="30px" height="30px"></a>
+				<img src="Picture/icon 2.png" class="menu-icon" onclick="menutoggle()">
+			</div>
+
+			<div class="row">
+				<div class="col-2">
+					<p style="font-size: 16pt"><b>Hi Peter!</b></p><br><br>
+					<h1>Transforming Therapy,<br> Guided by Intelligence</h1>
+					<p>PhysioFix is a personalized physiotherapy tool. AI assistance supports<br>correct practice, real-time feedback and progress tracking. Enhance<br> your recovery capabilities with our user-friendly solutions.</p>   
+					<a href="#what" class="btn">How It Works? &#8594;</a>
+					<a href="schedule.html" class="btn2">My Schedule</a>
+					<a href="ai monitor.html" class="btn2">AI Monitor</a>
+				</div>
+				<div class="col-2">
+					<img src="Picture/doctor1.png" alt="doctor" style="padding: 0;">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!------------ About Us ---------->
+
+	<div class="categories">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img class="about-img" src="Picture/Logo_2.png" alt="logo">
+				</div>
+				<div class="col-2" style="padding-left: 50px;">
+					<h1>Who We Are?</h1>
+					<p>Founded in 2023, PhysioFix is a well-respected and trusted physiotherapy center in Malaysia.<br>Our team is committed to provide individuals undergoing physiotherapy with a comprehensive and personalized solution to enhance their recovery process..</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!------------ What We Do ---------->
+	<div class="what" id="what">
+		<div class="what-container">
+			<h2 class="title">What We Do?</h2>
+			<div class="row">
+				<a href="schedule.html">
+					<div class="what-col">
+						<div class="card_1"></div>
+						<h3>Personalized Schedule</h3>
+						<p>Offer personalized exercise schedule based on the individual's specific condition, goals, and progress. Using AI to generate treatment plans to address users' rehabilitation requirements.</p>
+					</div>
+				</a>
+				<a href="ai monitor.html">
+					<div class="what-col" href="#help">
+						<div class="card_2"></div>
+						<h3>AI Exercise Monitoring</h3>
+						<p>Utilize computer vision algorithms to monitor user's movements to ensure individuals perform their exercises with the correct technique and form. </p>
+					</div>
+				</a>
+				<a href="feedback.html">
+					<div class="what-col" href="#help">
+						<div class="card_3"></div>
+						<h3>Collect Feedback</h3>
+						<p>Based on the user's feedback on the schedule, a new exercise plan will be generated to ensure that the user can perform rehabilitation training more effectively.</p>	
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!------------ How You Can Help ---------->
+	<!---<div class="help" id="help">
+		<div class="help-container">
+			<h2 class="title">How You Can Make A Difference</h2>
+			<div class="row">
+				<a href="adoption.html">
+					<div class="col-3">
+						<img src="Picture/adopt.jpg" alt="adopt a stary animal"><br>
+						<p>Adoption instead of purchase. Find your fur-ever family member. We have adoptable dogs, cats at our animal shelters.</p>
+						<br>
+						<h3><i class="fa fa-paw"></i> Adopt <i class="fa fa-paw"></i></h3>
+					</div>
+				</a>
+				<a href="fundraising.html">
+					<div class="col-3">
+						<img src="Picture/straycat1.jpg" alt="donate our programmes"><br>
+						<p>Donate to make a difference. Your gift can help feed an animal for a month, provide for their medical care, or fund our programmes.</p>
+						<br>
+						<h3><i class="fa fa-paw"></i> Donate <i class="fa fa-paw"></i></h3>
+					</div>
+				</a>
+				<a href="education.html#PetCare">
+					<div class="col-3">
+						<img src="Picture/petandowner.jpg" alt="responsible pet owner"><br>
+						<p>Did you know that many stray animals are abandoned pets? Don't dump your pets. Love good care of your pets and be a responsible owner.</p>
+						<br>
+						<h3><i class="fa fa-paw"></i> Be A Good Owner <i class="fa fa-paw"></i></h3>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>--->
+
+	<!------------ Latest Article ---------->
+
+	<!---<div class="article">
+		<div class="article-slider-container">
+			<h2 class="title">Latest Articles</h2>
+			<div class="arrow l" onclick="prev()">
+				<img src="Picture/left1.png">
+			</div>
+			<div class="slide slide-1">
+				<div class="row-article">
+					<div class="col-2">
+						<img class="article-img" src="Picture/straycat3.jpg" alt="stray cats">
+					</div>
+					<div class="col-2" style="padding: 0 60px;">
+						<h4>11 November 2022</h4>
+						<h2 class="article-title">How We Can Reduce The Number of Strays Together?</h2>
+						<p>It's no secret that strays animal are a constant issue in Malaysia. Pet overpopulation is caused by a variety of factors.</p>
+						<a href="article1.html" class="btn">Read More <i class="fa fa-book"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="slide slide-2">
+				<div class="row-article">
+					<div class="col-2">
+						<img class="article-img" src="Picture/straydog3.jpg" alt="stray dogs">
+					</div>
+					<div class="col-2" style="padding: 0 60px;">
+						<h4>12 November 2022</h4>
+						<h2 class="article-title">Negative Effects of Excessive Stray Animal Populations</h2>
+						<p>Stray animal overpopulation has become one of the most serious global problems with many negative impacts on the community, environment, and public health.</p>
+						<a href="article2.html" class="btn">Read More <i class="fa fa-book"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="slide slide-3">
+				<div class="row-article">
+					<div class="col-2">
+						<img class="article-img" src="Picture/petandowner2.jpg" alt="responsible pet ownership">
+					</div>
+					<div class="col-2" style="padding: 0 60px;">
+						<h4>13 November 2022</h4>
+						<h2 class="article-title">Your Responsibility as a Pet Owner</h2>
+						<p>Pets can bring all types of joy to us and our family. However, they are also a big responsibility – here are some pointers.</p>
+						<a href="article3.html" class="btn">Read More <i class="fa fa-book"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="arrow r" onclick="next()">
+				<img src="Picture/right.png">
+			</div>
+			<a href="education.html" class="viewall-btn">VIEW ALL</a>
+			<hr class="viewall-hr">
+		</div>
+	</div>
+	
+	<script>
+        let slide = document.querySelectorAll('.slide');
+        var current = 0;
+
+        function cls(){
+            for(let i = 0; i < slide.length; i++){
+                  slide[i].style.display = 'none';
+            }
+        }
+
+        function next(){
+            cls();
+            if(current === slide.length-1) current = -1;
+            current++;
+
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function(){
+                x+=0.1;
+                slide[current].style.opacity = x;
+                if(x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+
+        }
+
+        function prev(){
+            cls();
+            if(current === 0) current = slide.length;
+            current--;
+
+            slide[current].style.display = 'block';
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function(){
+                x+=0.1;
+                slide[current].style.opacity = x;
+                if(x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+
+        }
+
+        function start(){
+            cls();
+            slide[current].style.display = 'block';
+        }
+        start();
+    </script>--->
+
+
+
+	<!------------ subscription form ---------->
+	<script>
+		function validateMyForm(){
+	        if(document.getElementById("username").value == ""){
+	            alert("Please key in your name (￣︶￣)");
+	        }
+	        else{
+	            if(document.getElementById("email").value == ""){
+	                alert("Please key in your email (￣︶￣)");
+	            }
+	            else{
+	                alert("thank you for subscribing us!");
+	                document.getElementById("subscriptionForm").submit();
+	            }
+	        }
+    	}
+	</script>
+	<div class="subscription">
+		<div class="row">
+		<div class="subscription-container">
+			<h2 class="title">Get Free Email Update</h2>
+			<p>Subscribe to our website and get the latest updates straight to your inbox.</p>
+			<form id="subscriptionForm">
+
+					<div class="input-box">
+						<input type="text" placeholder="Your name" required name="username" id="username">
+					</div>
+					<div class="input-box">
+						<input type="email" placeholder="Email address" required name="email" id="email">
+					</div>
+
+				<div class="subscription-btn">
+					<input type="button" value="Subscribe" onclick="validateMyForm()">
+				</div>
+			</form>
+		</div>
+		</div>
+	</div>
+
+
+	<!------------ footer ---------->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-2">
+					<img src="Picture/Logo_white2.png" alt="logo">
+					<p>Our purpose is to provide AI solutions to assists end-user during their physiotherapy process.</p>
+					<br>
+					<b>Email: </b><a href="mailto:enquiry@physiofix.org.my"> enquiry@physiofix.org.my</a>
+					<p><b>Hotline: </b>(+60)123456789</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li><a href="main.html">Home</a></li>
+						<li><a href="ai monitor.html">AI Monitor</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+						<li><a href="profile.html">Profile</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">YouTube</a></li>
+						<li><a href="">TikTok</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright © 2023 PhysioFix. All Rights Reserved.</p>
+		</div>
+	</div>
+	<!------------ js for toggle menu ---------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeigh = "0px"
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeigh == "0px"){
+				MenuItems.style.maxHeigh = "200px"
+			}
+			else{
+				MenuItems.style.maxHeigh = "0px"
+			}
+		}
+	</script>
+
+</body>
+
+</html>

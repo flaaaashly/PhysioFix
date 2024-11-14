@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MyPaws | Product Details</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="Picture/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="main.html" class="active"><img src="Picture/Logo_2.png" alt="logo" width="150px"></a>
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="main.html">Home</a></li>
+					<li><a href="ai monitor.html">AI Monitor</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+					<li><a href="profile.html" class="active">Profile</a></li>
+				</ul>
+			</nav>
+			<a href="profile.html"><img src="Picture/icon 1.png" width="30px" height="30px"></a>
+			<img src="Picture/icon 2.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+
+<!------------ single product details ---------->
+
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+				<img src="Picture/Peter.png" width="100%">
+
+			</div>
+			<div class="col-2">
+				<p>My Profile</p>
+				<h1>Peter Parker</h1>
+				<p style="font-size:13pt"><b>Age: </b>20</p>
+				<p style="font-size:13pt"><b>Date Last Visited Doctor: </b>15/05/2023</p>
+				<p style="font-size:13pt"><b>Occupation: </b>Athlete</p>
+				<p style="font-size:13pt"><b>Medical Diagnosis: </b>Knee ligament tears</p>
+				<p style="font-size:13pt"><b>Cause: </b>Careless movement when playing football</p>
+			</div>
+		</div>
+	</div> <br><br><br><br>
+
+		<!------------ footer ---------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-2">
+					<img src="Picture/Logo_white2.png" alt="logo">
+					<p>Our purpose is to reduce the number of stray animals in Malaysia while taking care of their welfare.</p>
+					<br>
+					<b>Email: </b><a href="mailto:enquiry@mypaws.org.my"> enquiry@mypaws.org.my</a>
+					<p><b>Hotline: </b>(+60)123456789</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li><a href="main.html">Home</a></li>
+						<li><a href="ai monitor.html">AI Monitor</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+						<li><a href="profile.html">Profile</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">YouTube</a></li>
+						<li><a href="">TikTok</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright © 2022 MyPaws. All Rights Reserved.</p>
+		</div>
+	</div>
+	
+	<!------------ js for toggle menu ---------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeigh = "0px"
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeigh == "0px"){
+				MenuItems.style.maxHeigh = "200px"
+			}
+			else{
+				MenuItems.style.maxHeigh = "0px"
+			}
+		}
+	</script>
+
+	<!------------ js for product gallery ---------->
+	<script>
+		var ProductImg = document.getElementById("ProductImg");
+		var SmallImg = document.getElementsByClassName("small-img");
+
+			SmallImg[0].onclick = function(){
+				ProductImg.src = SmallImg[0].src;
+			}
+			SmallImg[1].onclick = function(){
+				ProductImg.src = SmallImg[1].src;
+			}
+			SmallImg[2].onclick = function(){
+				ProductImg.src = SmallImg[2].src;
+			}
+			SmallImg[3].onclick = function(){
+				ProductImg.src = SmallImg[3].src;
+			}
+	</script>
+
+	<!------------ js for adding product into cart ---------->
+	<script>
+		function addtocart(){
+			alert("Product successfully added to shopping cart (￣︶￣)");
+		}
+	</script>
+
+</body>
+
+</html>

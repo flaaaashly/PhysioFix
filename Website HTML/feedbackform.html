@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MyPaws | Report Found Pet</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="Picture/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="main.html" class="active"><img src="Picture/Logo_2.png" alt="logo" width="180px"></a>
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="main.html">Home</a></li>
+					<li><a href="ai monitor.html">AI Monitor</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="feedback.html" class="active">Feedback</a></li>
+					<li><a href="profile.html">Profile</a></li>
+				</ul>
+			</nav>
+			<a href="profile.html"><img src="Picture/icon 1.png" width="30px" height="30px"></a>
+			<img src="Picture/icon 2.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+	
+	<!------------ feedback form---------->
+	<script>
+		function validateReportForm(){
+	        if(document.getElementById("improve").value == ""){
+	            alert("Please select (￣︶￣)");
+	        }
+	        else if(document.getElementById("pain").value == ""){
+	                alert("Please select (￣︶￣)");
+	        }
+	        else if(document.getElementById("level").value == ""){
+	                alert("Please select the level of pain (￣︶￣)");
+	        }
+	        else if(document.getElementById("descript").value == ""){
+	                alert("Please descript your pain (￣︶￣)");
+	        }
+	        else{
+	            document.getElementById("reportForm").submit();
+	        }
+	    }	
+	</script>
+
+	<div class="reportForm">
+		<div class="row">
+			<div class="reportForm-container">
+				<h2 class="title">Feedback Form</h2>
+				<form id="reportForm" action="formsubmitted1.html">
+					<h3><i class="fa fa-user"></i> Fill in all parts</h3>
+					<div class="input-drop-box">
+						<p>Are there any improvements after the exercise*: </p>
+						<select name="improve" id="improve" required>
+							<option value="">Please select</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="input-drop-box">
+						<p>Do you still feel pain after the exercise?*: </p>
+						<select name="pain" id="pain" required>
+							<option value="">Please select</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+						</select>
+					</div>
+					<div class="input-drop-box">
+						<p>Can you rate the pain level?*: </p>
+						<select name="level" id="level" required>
+							<option value="">Please select</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+					<div class="input-box">
+						<p>Can you please describe the discomfort/pain? (short text)*:</p>
+						<input type="text" placeholder="Description" id="descript" name="descript"> 
+					</div>						
+					<div class="reportForm-btn">
+						<input type="button" value="Submit" onclick="validateReportForm()">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!------------ footer ---------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-2">
+					<img src="Picture/Logo_white2.png" alt="logo">
+					<p>Our purpose is to reduce the number of stray animals in Malaysia while taking care of their welfare.</p>
+					<br>
+					<b>Email: </b><a href="mailto:enquiry@mypaws.org.my"> enquiry@mypaws.org.my</a>
+					<p><b>Hotline: </b>(+60)123456789</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="ai monitor.html">AI Monitor</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+						<li><a href="profile.html">Profile</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">YouTube</a></li>
+						<li><a href="">TikTok</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright © 2022 MyPaws. All Rights Reserved.</p>
+		</div>
+	</div>
+	
+	<!------------ js for toggle menu ---------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeigh = "0px"
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeigh == "0px"){
+				MenuItems.style.maxHeigh = "200px"
+			}
+			else{
+				MenuItems.style.maxHeigh = "0px"
+			}
+		}
+	</script>
+
+</body>
+
+</html>

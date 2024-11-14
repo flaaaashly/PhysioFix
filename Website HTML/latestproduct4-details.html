@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MyPaws | Product Details</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="Picture/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="main.html" class="active"><img src="Picture/Logo_2.png" alt="logo" width="150px"></a>
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="main.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="adoption.html">Adoption</a></li>
+					<li><a href="fundraising.html">Fundraising</a></li>
+					<li><a href="merchandise.html" class="active">Product</a></li>
+					<li><a href="lostpet.html">Lost Pet</a></li>
+				</ul>
+			</nav>
+			<a href="cart.html"><img src="Picture/icon 1.png" width="30px" height="30px" alt="shopping bag icon"></a>
+			<img src="Picture/icon 2.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+
+<!------------ single product details ---------->
+
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+				<a href="merchandise.html" class="viewall-btn back">&#8592 Back</a>
+				<br><br>
+				<img src="Picture/Canvas Bag.jpg" width="100%" id="ProductImg">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="Picture/Canvas Bag.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="Picture/Canvas Bag2.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="Picture/Canvas Bag3.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="Picture/Canvas Bag4.jpg" width="100%" class="small-img">
+					</div>
+				</div>
+
+			</div>
+			<div class="col-2">
+				<p>Home & Living</p>
+				<h1>Canvas Bag</h1>
+				<h4>RM45.00</h4>
+				<select>
+					<option>Select Size</option>
+					<option>L</option>
+					<option>M</option>
+					<option>S</option>
+				</select>
+				<input type="number" value="1" min="1">
+				<a href="latestproduct4-details.html" class="btn" onclick="addtocart()"> Add to Cart</a>
+				<a href="cart.html" class="btn3">View Cart</a>
+
+				<h3>Product Details</h3>
+				<br>
+				<p>Made of 100% natural material and printed with MyPaws official logo. Versatile, trendy, and durable, this canvas bag means you'll always look fashionable!</p>
+			</div>
+		</div>
+	</div>
+
+<!------------ title ---------->
+	<div class="small-container">
+		<div class="row-relatedproduct">
+			<h2>More Products</h2>
+			<a href="merchandise.html" class="viewall-btn">View More</a>
+		</div>
+	</div>
+
+
+<!------------ more products ---------->
+	<div class="product">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-4">
+					<a href="home&living4.html">
+						<img src="Picture/Classic Mug.jpg">
+						<h4>Classic Mug</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<p>RM35.00</p>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="home&living5.html">
+						<img src="Picture/Latte Mug.jpg">
+						<h4>Latte Mug</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<p>RM35.00</p>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="home&living6.html">
+						<img src="Picture/Frosted Glass Mug.jpg">
+						<h4>Frosted Glass Mug</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<p>RM40.00</p>
+					</a>
+				</div>
+				<div class="col-4">
+					<a href="home&living7.html">
+						<img src="Picture/Stainless Steel Travel Mug.jpg">
+						<h4>Stainless Steel Travel Mug</h4>
+						<div class="rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</div>
+						<p>RM65.00</p>
+					</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+		<!------------ footer ---------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-2">
+					<img src="Picture/Logo_white2.png" alt="logo">
+					<p>Our purpose is to reduce the number of stray animals in Malaysia while taking care of their welfare.</p>
+					<br>
+					<b>Email: </b><a href="mailto:enquiry@mypaws.org.my"> enquiry@mypaws.org.my</a>
+					<p><b>Hotline: </b>(+60)123456789</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li><a href="education.html">Education</a></li>
+						<li><a href="adoption.html">Adoption</a></li>
+						<li><a href="fundraising.html">Fundraising</a></li>
+						<li><a href="merchandise.html">Charity Merchandise</a></li>
+						<li><a href="lostpet.html">Lost Pet</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">YouTube</a></li>
+						<li><a href="">TikTok</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright © 2022 MyPaws. All Rights Reserved.</p>
+		</div>
+	</div>
+	
+	<!------------ js for toggle menu ---------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeigh = "0px"
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeigh == "0px"){
+				MenuItems.style.maxHeigh = "200px"
+			}
+			else{
+				MenuItems.style.maxHeigh = "0px"
+			}
+		}
+	</script>
+
+	<!------------ js for product gallery ---------->
+	<script>
+		var ProductImg = document.getElementById("ProductImg");
+		var SmallImg = document.getElementsByClassName("small-img");
+
+			SmallImg[0].onclick = function(){
+				ProductImg.src = SmallImg[0].src;
+			}
+			SmallImg[1].onclick = function(){
+				ProductImg.src = SmallImg[1].src;
+			}
+			SmallImg[2].onclick = function(){
+				ProductImg.src = SmallImg[2].src;
+			}
+			SmallImg[3].onclick = function(){
+				ProductImg.src = SmallImg[3].src;
+			}
+	</script>
+
+	<!------------ js for adding product into cart ---------->
+	<script>
+		function addtocart(){
+			alert("Product successfully added to shopping cart (￣︶￣)");
+		}
+	</script>
+
+</body>
+
+</html>

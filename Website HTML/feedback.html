@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MyPaws | Lost Pet</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="Picture/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="main.html" class="active"><img src="Picture/Logo_2.png" alt="logo" width="180px"></a>
+			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li><a href="main.html">Home</a></li>
+					<li><a href="ai monitor.html">AI Monitor</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="feedback.html" class="active">Feedback</a></li>
+					<li><a href="profile.html">Profile</a></li>
+				</ul>
+			</nav>
+			<a href="profile.html"><img src="Picture/icon 1.png" width="30px" height="30px"></a>
+			<img src="Picture/icon 2.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+	</div>
+	
+	
+	<!------------ top banner section ---------->
+	<div class="monitor-top">
+		<div class="small-container-merchandise">
+			<div class="row">
+				<div class="col-2">
+					<img class="monitor-img" src="Picture/feedback.png">
+				</div>
+				<div class="col-2" style="padding-left: 30px;">
+					<h1>Your Voice, Our Growth</h1>
+					<p>We listen to your feedback to refine our prediction model and scheduling system. Together, we optimize your physiotherapy experience, ensuring personalized care and better results.<br></p>
+					<a href="#Lost" class="btn2">View Schedule</a>
+					<a href="#Feedback" class="btn2">Submit Feedback</a>
+					<br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+	<!----------Feedback Form section-------->
+	<div class="adopt" id="Feedback">
+		<div class="medium-container">
+			<h2 class="title">Feedback Form</h2>
+			<div class="row" id="reportfound">
+				<div class="slide slide-1">
+					<div class="row-article">
+						<div class="col-2">
+							<img class="article-img" src="Picture/lostpet6.jpg" alt="stray cats">
+						</div>
+						<div class="col-2" style="padding: 0 60px;">
+							<h2 class="article-title">Feedback Form is Here</h2>
+							<p>Share your exercise experience with us and help shape the future of physiotherapy. Your valuable feedback fuels our continuous improvement efforts, enabling us to refine our prediction model and scheduling system for a more personalized and effective approach to your recovery journey.</p>
+							<a href="feedbackform.html" class="btn">Form</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br><br><br>
+		</div>
+	</div>
+
+
+	<!------------ footer ---------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-2">
+					<img src="Picture/Logo_white2.png" alt="logo">
+					<p>Our purpose is to reduce the number of stray animals in Malaysia while taking care of their welfare.</p>
+					<br>
+					<b>Email: </b><a href="mailto:enquiry@mypaws.org.my"> enquiry@mypaws.org.my</a>
+					<p><b>Hotline: </b>(+60)123456789</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="ai monitor.html">AI Monitor</a></li>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
+						<li><a href="profile.html">Profile</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">YouTube</a></li>
+						<li><a href="">TikTok</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright © 2022 MyPaws. All Rights Reserved.</p>
+		</div>
+	</div>
+	
+	<!------------ js for toggle menu ---------->
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeigh = "0px"
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeigh == "0px"){
+				MenuItems.style.maxHeigh = "200px"
+			}
+			else{
+				MenuItems.style.maxHeigh = "0px"
+			}
+		}
+	</script>
+
+</body>
+
+</html>
